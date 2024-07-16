@@ -5,7 +5,7 @@
 
 # ScreenShots:
 
-<img src="" alt="">
+<img src="https://github.com/Mr-Elliot-0/Frontend-For-Fun/blob/main/Cinema/screenshots/1.png" alt="">
 
 # Developers:
 
