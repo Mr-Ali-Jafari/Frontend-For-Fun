@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "LaleZar";
+    src: url(static/Lalezar-Regular.ttf);
+}
+*{
+    font-family: "LaleZar";
+}
+body{
+    background-color: #102a43;
+}
+.navbar-nav{
+    margin: auto;
+    direction: rtl;
+}
+.nav-item{
+    color: white;
+}
+.search-input{
+    border-radius: 100px;
+    direction: rtl;
+}
+.search{
+    border-radius: 100%;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+}
+.text{
+    color: white;
+}
+.play{
+    height: fit-content;
+    position: absolute;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right; /* Align items to the right */
+}
+
+.image {
+    max-width: 300px;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 20px white;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.text {
+    margin-right: 30px;
+}
+
+.blur-card{
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgb(255, 129, 150);
+}
+.card-text{
+    color: white;
+}
+.card-title{
+    color: white;
+}
+
+.anime-picture{
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px white;
+}
+
+.phone-icon{
+    color: rgb(0, 255, 0);
+    list-style: none;
+    text-align: left;
+    margin: 10px;
+    
+}
+
+.telegram-icon{
+    color: rgb(0, 85, 255);
+    list-style: none;
+    text-align: left;
+    margin: 10px;
+    
+}
+
+.social-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.texts{
+    color: white;
+    direction: rtl;
+    text-align: center;
+    margin-top: 30px;
+}
+.work-media{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.bi-envelope-plus{
+    margin-left: 20px;
+}
+.bi-github{
+    margin-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .image {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Optional: Add margin below the image */
+    }
+
+    .text {
+        text-align: center; /* Center align text */
+    }
+}
