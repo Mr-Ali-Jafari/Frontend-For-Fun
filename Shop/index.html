@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آنلاین شاپ گیمینگ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    *{
+      font-family: 'Vazir', sans-serif;
+    }
+  </style>
+</head>
+<body dir="rtl" class="bg-gray-900 text-gray-100">
+  <!-- بخش تصویر با متن -->
+  <section class="relative h-96 bg-cover bg-center fade-in" style="background-image: url('src/img.jpg');">
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+      <h1 class="text-4xl font-bold text-white animate-pulse">فروشگاه گیمینگ</h1>
+    </div>
+  </section>
+
+  <!-- بخش تصاویر دایره‌ای هم‌پوشان -->
+  <div class="flex justify-center mt-8 relative fade-in">
+    <div class="flex -space-x-4">
+      <img src="src/1.jfif" alt="تصویر 1" class="w-16 h-16 rounded-full border-4 border-gray-800">
+      <img src="src/2.jfif" alt="تصویر 2" class="w-16 h-16 rounded-full border-4 border-gray-800">
+      <img src="src/3.webp" alt="تصویر 3" class="w-16 h-16 rounded-full border-4 border-gray-800">
+      <img src="src/4.webp" alt="تصویر 4" class="w-16 h-16 rounded-full border-4 border-gray-800">
+      <img src="src/5.jpg" alt="تصویر 5" class="w-16 h-16 rounded-full border-4 border-gray-800">
+    </div>
+  </div>
+
+  <!-- بخش آیتم‌ها -->
+  <section class="container mx-auto mt-12 fade-in">
+    <h2 class="text-3xl font-extrabold text-center text-blue-500 mb-8">محصولات ویژه</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <!-- کارت محصول -->
+      <div class="relative bg-gray-800 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl group">
+        <img src="src/8.jpg" alt="محصول 1" class="rounded-t-xl w-full object-cover h-48">
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-blue-300">هدست گیمینگ</h3>
+          <p class="text-sm text-gray-400 mt-2">صدای عالی برای تجربه بازی‌های حرفه‌ای</p>
+          <button class="bg-blue-700 text-white py-2 px-4 rounded-lg mt-4 w-full hover:bg-blue-600 transition duration-300">
+            خرید
+          </button>
+        </div>
+        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">جدید</div>
+      </div>
+  
+      <div class="relative bg-gray-800 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl group">
+        <img src="src/7.jpg" alt="محصول 2" class="rounded-t-xl w-full object-cover h-48">
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-blue-300">ماوس گیمینگ</h3>
+          <p class="text-sm text-gray-400 mt-2">دقت بی‌نظیر برای عملکرد بهتر</p>
+          <button class="bg-blue-700 text-white py-2 px-4 rounded-lg mt-4 w-full hover:bg-blue-600 transition duration-300">
+            خرید
+          </button>
+        </div>
+        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">ویژه</div>
+      </div>
+  
+      <div class="relative bg-gray-800 rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl group">
+        <img src="src/6.png" alt="محصول 3" class="rounded-t-xl w-full object-cover h-48">
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-blue-300">کیبورد گیمینگ</h3>
+          <p class="text-sm text-gray-400 mt-2">سرعت و نورپردازی زیبا</p>
+          <button class="bg-blue-700 text-white py-2 px-4 rounded-lg mt-4 w-full hover:bg-blue-600 transition duration-300">
+            خرید
+          </button>
+        </div>
+        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">حراج</div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <section class="container mx-auto mt-16 fade-in">
+    <h2 class="text-3xl font-extrabold text-center text-pink-500 mb-8">آیتم‌های بازی</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- کارت آیتم -->
+      <div class="bg-gray-800 rounded-lg shadow-lg p-4 group hover:scale-105 transform transition-all hover:shadow-2xl">
+        <img src="src/9.webp" alt="پوسته 1" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="text-lg font-bold text-pink-300 mt-4">پوسته جنگی</h3>
+        <p class="text-sm text-gray-400 mt-2">ظاهر جذاب و حرفه‌ای برای قهرمانان.</p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-pink-400 font-bold text-lg">1500 تومان</span>
+          <button class="bg-pink-600 text-white py-2 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            خرید
+          </button>
+        </div>
+      </div>
+  
+      <div class="bg-gray-800 rounded-lg shadow-lg p-4 group hover:scale-105 transform transition-all hover:shadow-2xl">
+        <img src="src/10.avif" alt="سلاح" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="text-lg font-bold text-pink-300 mt-4">سلاح افسانه‌ای</h3>
+        <p class="text-sm text-gray-400 mt-2">قدرت بیشتر برای نبردهای سرنوشت‌ساز.</p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-pink-400 font-bold text-lg">2000 تومان</span>
+          <button class="bg-pink-600 text-white py-2 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            خرید
+          </button>
+        </div>
+      </div>
+  
+      <div class="bg-gray-800 rounded-lg shadow-lg p-4 group hover:scale-105 transform transition-all hover:shadow-2xl">
+        <img src="src/11.avif" alt="افکت ویژه" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="text-lg font-bold text-pink-300 mt-4">افکت ویژه</h3>
+        <p class="text-sm text-gray-400 mt-2">نورپردازی‌های فوق‌العاده در بازی.</p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-pink-400 font-bold text-lg">1200 تومان</span>
+          <button class="bg-pink-600 text-white py-2 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            خرید
+          </button>
+        </div>
+      </div>
+  
+      <div class="bg-gray-800 rounded-lg shadow-lg p-4 group hover:scale-105 transform transition-all hover:shadow-2xl">
+        <img src="src/12.avif" alt="حیوان همراه" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="text-lg font-bold text-pink-300 mt-4">حیوان همراه</h3>
+        <p class="text-sm text-gray-400 mt-2">یک همراه با قابلیت‌های منحصر به فرد.</p>
+        <div class="flex items-center justify-between mt-4">
+          <span class="text-pink-400 font-bold text-lg">3000 تومان</span>
+          <button class="bg-pink-600 text-white py-2 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            خرید
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container mx-auto mt-16 fade-in">
+    <h2 class="text-3xl font-extrabold text-center text-pink-500 mb-8">نظرات کاربران</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- کارت نظر -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="flex items-center mb-4">
+          <img src="src/3.webp" alt="کاربر 1" class="w-12 h-12 rounded-full border-2 border-gray-700">
+          <div class="ml-4">
+            <p class="text-lg font-bold text-pink-300">مهدی رضایی</p>
+            <p class="text-sm text-gray-400">مشتری دائمی</p>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">
+          "واقعا سایت فوق‌العاده‌ای است! تنوع محصولات و خدماتش بی‌نظیر است. تجربه خرید من خیلی عالی بود."
+        </p>
+        <div class="flex items-center justify-between">
+          <span class="text-pink-400 font-bold">⭐⭐⭐⭐⭐</span>
+          <button class="bg-pink-600 text-white py-1 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            پاسخ دهید
+          </button>
+        </div>
+      </div>
+  
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="flex items-center mb-4">
+          <img src="src/2.jfif" alt="کاربر 2" class="w-12 h-12 rounded-full border-2 border-gray-700">
+          <div class="ml-4">
+            <p class="text-lg font-bold text-pink-300">سارا آقاجانی</p>
+            <p class="text-sm text-gray-400">کاربر تازه</p>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">
+          "محصولات عالی و پشتیبانی خیلی سریع! قطعا دوباره خرید خواهم کرد."
+        </p>
+        <div class="flex items-center justify-between">
+          <span class="text-pink-400 font-bold">⭐⭐⭐⭐</span>
+          <button class="bg-pink-600 text-white py-1 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            پاسخ دهید
+          </button>
+        </div>
+      </div>
+  
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="flex items-center mb-4">
+          <img src="src/1.jfif" alt="کاربر 3" class="w-12 h-12 rounded-full border-2 border-gray-700">
+          <div class="ml-4">
+            <p class="text-lg font-bold text-pink-300">علی جعفری</p>
+            <p class="text-sm text-gray-400">کاربر حرفه‌ای</p>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">
+          "سایت به طور کلی خیلی کاربرپسند است و تنوع محصولات خیلی خوب است. اما برخی از محصولات به نظر می‌رسد که قیمت بالایی دارند."
+        </p>
+        <div class="flex items-center justify-between">
+          <span class="text-pink-400 font-bold">⭐⭐⭐</span>
+          <button class="bg-pink-600 text-white py-1 px-4 rounded-lg hover:bg-pink-500 transition duration-300">
+            پاسخ دهید
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="container mx-auto mt-16 fade-in">
+    <h2 class="text-3xl font-extrabold text-center text-pink-500 mb-8">ویژگی‌های سایت</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- ویژگی 1 -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="text-pink-500 text-4xl mb-4">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <h3 class="text-xl font-bold text-pink-300 mb-2">بازی‌های متنوع</h3>
+        <p class="text-gray-400 text-sm">ما مجموعه‌ای از بازی‌های جذاب و هیجان‌انگیز در اختیار شما قرار می‌دهیم.</p>
+      </div>
+  
+      <!-- ویژگی 2 -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="text-pink-500 text-4xl mb-4">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3 class="text-xl font-bold text-pink-300 mb-2">پشتیبانی 24/7</h3>
+        <p class="text-gray-400 text-sm">پشتیبانی آنلاین برای هر سوال یا مشکلی که دارید در دسترس است.</p>
+      </div>
+  
+      <!-- ویژگی 3 -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="text-pink-500 text-4xl mb-4">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3 class="text-xl font-bold text-pink-300 mb-2">ارسال سریع</h3>
+        <p class="text-gray-400 text-sm">تمامی محصولات با سریع‌ترین روش ارسال می‌شوند تا از خریدتان لذت ببرید.</p>
+      </div>
+  
+      <!-- ویژگی 4 -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transform transition-all hover:shadow-2xl">
+        <div class="text-pink-500 text-4xl mb-4">
+          <i class="fas fa-lock"></i>
+        </div>
+        <h3 class="text-xl font-bold text-pink-300 mb-2">امنیت بالا</h3>
+        <p class="text-gray-400 text-sm">تمامی اطلاعات شما در سایت با بالاترین سطح امنیت محافظت می‌شود.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- فوتر با SVG -->
+  <div class="mt-12 relative">
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 62, 175.812, 1)" offset="0%"></stop><stop stop-color="rgba(23.226, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,66L26.7,56.8C53.3,48,107,29,160,25.7C213.3,22,267,33,320,33C373.3,33,427,22,480,22C533.3,22,587,33,640,44C693.3,55,747,66,800,67.8C853.3,70,907,62,960,56.8C1013.3,51,1067,48,1120,55C1173.3,62,1227,81,1280,89.8C1333.3,99,1387,99,1440,93.5C1493.3,88,1547,77,1600,60.5C1653.3,44,1707,22,1760,25.7C1813.3,29,1867,59,1920,75.2C1973.3,92,2027,95,2080,97.2C2133.3,99,2187,99,2240,91.7C2293.3,84,2347,70,2400,60.5C2453.3,51,2507,48,2560,44C2613.3,40,2667,37,2720,45.8C2773.3,55,2827,77,2880,88C2933.3,99,2987,99,3040,82.5C3093.3,66,3147,33,3200,23.8C3253.3,15,3307,29,3360,40.3C3413.3,51,3467,59,3520,56.8C3573.3,55,3627,44,3680,44C3733.3,44,3787,55,3813,60.5L3840,66L3840,110L3813.3,110C3786.7,110,3733,110,3680,110C3626.7,110,3573,110,3520,110C3466.7,110,3413,110,3360,110C3306.7,110,3253,110,3200,110C3146.7,110,3093,110,3040,110C2986.7,110,2933,110,2880,110C2826.7,110,2773,110,2720,110C2666.7,110,2613,110,2560,110C2506.7,110,2453,110,2400,110C2346.7,110,2293,110,2240,110C2186.7,110,2133,110,2080,110C2026.7,110,1973,110,1920,110C1866.7,110,1813,110,1760,110C1706.7,110,1653,110,1600,110C1546.7,110,1493,110,1440,110C1386.7,110,1333,110,1280,110C1226.7,110,1173,110,1120,110C1066.7,110,1013,110,960,110C906.7,110,853,110,800,110C746.7,110,693,110,640,110C586.7,110,533,110,480,110C426.7,110,373,110,320,110C266.7,110,213,110,160,110C106.7,110,53,110,27,110L0,110Z"></path></svg>
+    <footer class=" text-white py-8" style="background-color: #F13EB0; " id="footer">
+      
+      <div class="container mx-auto px-6 lg:px-20">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- درباره ما -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-white">درباره تایگر تیم</h3>
+            <p class="text-white">
+              تایگر تیم یک گروه متخصص در توسعه وب و نرم‌افزار است که با ارائه خدمات نوآورانه، به دنبال ایجاد ارزش برای مشتریان خود است.
+            </p>
+          </div>
+    
+          <!-- لینک‌های مفید -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-white">لینک‌های مفید</h3>
+            <ul class="text-white space-y-2">
+              <li><a href="#home" class="hover:text-white transition duration-300">خانه</a></li>
+              <li><a href="#projects" class="hover:text-white transition duration-300">نمونه کارها</a></li>
+              <li><a href="#contact" class="hover:text-white transition duration-300">تماس با ما</a></li>
+            </ul>
+          </div>
+    
+          <!-- اطلاعات تماس -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-white">اطلاعات تماس</h3>
+            <ul class="text-white space-y-2">
+              <li>📍 آدرس: اصفهان, ایران</li>
+              <li>📞 تلفن: 09336472907</li>
+              <li>✉️ ایمیل: riptt89@gmail.com</li>
+              <li>✉️ تلگرام : @tigger_team</li>
+              <li>✉️ ربات تلگرام: @tigger_team_bot</li>
+    
+            </ul>
+          </div>
+        </div>
+    
+    
+    
+        <!-- حق کپی‌رایت -->
+        <div class="mt-8 border-t border-white pt-4 text-center">
+          <p class="text-white">© ۲۰۲۴ تایگر تیم. کلیه حقوق محفوظ است.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
