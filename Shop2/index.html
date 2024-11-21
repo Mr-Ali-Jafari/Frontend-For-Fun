@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تایگر تیم - فروشگاه آنلاین</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+        font-family: "Vazirmatn", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+    </style>
+
+</head>
+<body class="bg-gray-50 text-gray-800" dir="rtl">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 py-3">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-4">
+        <img src="src/tigger-team.jfif" alt="Logo" class="w-10 h-10" style="border-radius: 10px; margin-left: 10px;">
+        <h1 class="text-2xl font-bold text-blue-600">تایگر تیم</h1>
+      </div>
+  
+      <!-- Navbar for Large Screens -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4 text-gray-600">
+          <li><a href="#" class="hover:text-blue-600">خانه</a></li>
+          <li><a href="#" class="hover:text-blue-600">محصولات</a></li>
+          <li><a href="#" class="hover:text-blue-600">درباره ما</a></li>
+          <li><a href="#" class="hover:text-blue-600">تماس با ما</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Search and Login Section -->
+      <div class="flex items-center space-x-4">
+        <input type="text" placeholder="جستجو..." class="border rounded-md px-3 py-1 text-sm focus:outline-blue-500">
+        <button class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700">ورود</button>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden flex items-center text-gray-600" id="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu Dropdown -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="flex flex-col space-y-4 px-4 py-3 text-gray-600">
+        <li><a href="#" class="hover:text-blue-600">خانه</a></li>
+        <li><a href="#" class="hover:text-blue-600">محصولات</a></li>
+        <li><a href="#" class="hover:text-blue-600">درباره ما</a></li>
+        <li><a href="#" class="hover:text-blue-600">تماس با ما</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+  
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-8">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+      <div class="md:w-1/2 text-center md:text-right">
+        <h2 class="text-4xl font-bold text-blue-700">بهترین لوازم خانگی</h2>
+        <p class="text-gray-600 mt-4">فروش آنلاین انواع لوازم خانگی با تضمین کیفیت و قیمت مناسب</p>
+        <button class="mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">مشاهده محصولات</button>
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <img src="src/banner.jfif" alt="Home Appliances" class="rounded-md shadow-lg" style="width: 500px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-8">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center text-gray-700 mb-6">دسته‌بندی‌ها</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Category Card -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg text-center">
+          <img src="src/yakhchal.png" alt="Category" class="mx-auto mb-4">
+          <h4 class="text-lg font-semibold text-gray-700">یخچال و فریزر</h4>
+        </div>
+        <!-- Repeat Category Cards -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg text-center">
+          <img src="src/shost.png" alt="Category" class="mx-auto mb-4">
+          <h4 class="text-lg font-semibold text-gray-700">ماشین لباسشویی</h4>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg text-center">
+          <img src="src/jaro.png" alt="Category" class="mx-auto mb-4">
+          <h4 class="text-lg font-semibold text-gray-700">جاروبرقی</h4>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg text-center">
+          <img src="src/micro.png" alt="Category" class="mx-auto mb-4">
+          <h4 class="text-lg font-semibold text-gray-700">مایکروویو</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <h3 class="text-4xl font-extrabold text-center text-gray-800 mb-10 tracking-wide">
+        <span class="text-blue-600">محصولات</span> ویژه ما
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product Card -->
+        <div class="relative bg-white shadow-lg rounded-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+          <div class="relative">
+            <img src="src/yakhchal.avif" alt="Product" class="w-full h-60 object-cover">
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">تخفیف ویژه</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold text-gray-700 mb-2">یخچال سامسونگ</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">یخچال با طراحی زیبا و امکانات پیشرفته برای خانه‌های مدرن.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-blue-600">3,000,000 تومان</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">افزودن به سبد</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat Product Card -->
+        <div class="relative bg-white shadow-lg rounded-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+          <div class="relative">
+            <img src="src/lebas.jpg" alt="Product" class="w-full h-60 object-cover">
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">تخفیف ویژه</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold text-gray-700 mb-2">لباسشویی ال جی</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">لباسشویی هوشمند با مصرف انرژی پایین و عمر طولانی.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-blue-600">2,500,000 تومان</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">افزودن به سبد</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat Product Card -->
+        <div class="relative bg-white shadow-lg rounded-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+          <div class="relative">
+            <img src="src/jaro.jpg" alt="Product" class="w-full h-60 object-cover">
+            <span class="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">محبوب</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold text-gray-700 mb-2">جاروبرقی بوش</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">جاروبرقی سبک، قدرتمند، و مناسب برای تمامی سطوح خانه.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-blue-600">8,000,000 تومان</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">افزودن به سبد</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="py-16 bg-blue-50">
+    <div class="container mx-auto px-6 lg:px-20 text-center">
+      <h3 class="text-4xl font-extrabold text-gray-800 mb-10">چرا <span class="text-blue-600">ما را انتخاب کنید؟</span></h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h4 class="text-lg font-bold text-gray-700 mb-2">تضمین کیفیت</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">محصولات با کیفیت بالا و تضمین اصالت کالا.</p>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21l-6-6m0 0l6-6m-6 6h18" />
+            </svg>
+          </div>
+          <h4 class="text-lg font-bold text-gray-700 mb-2">ارسال سریع</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">تحویل سریع و به موقع به سراسر کشور.</p>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m0 0l3-3m-3 3l-3-3m6 5a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h4 class="text-lg font-bold text-gray-700 mb-2">پرداخت امن</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">پرداخت آنلاین ایمن با تمامی کارت‌های بانکی.</p>
+        </div>
+  
+        <!-- Feature 4 -->
+        <div class="flex flex-col items-center bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+          <div class="bg-blue-100 text-blue-600 p-4 rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+          </div>
+          <h4 class="text-lg font-bold text-gray-700 mb-2">تنوع بی‌نظیر</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">مجموعه‌ای گسترده از انواع محصولات خانگی.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <h3 class="text-4xl font-extrabold text-center text-gray-800 mb-10">
+        <span class="text-blue-600">نظرات</span> مشتریان ما
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial Card -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
+          <img class="w-20 h-20 rounded-full border-4 border-blue-100 mb-4" src="https://randomuser.me/api/portraits/men/10.jpg" alt="Customer">
+          <h4 class="text-lg font-bold text-gray-700">محمد رضایی</h4>
+          <p class="text-gray-500 text-sm mt-2">"خرید از این فروشگاه تجربه‌ای عالی بود. کیفیت محصولات بی‌نظیر و ارسال به‌موقع انجام شد."</p>
+          <div class="mt-4 text-yellow-500 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+          </div>
+        </div>
+  
+        <!-- Repeat Testimonial Card -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
+          <img class="w-20 h-20 rounded-full border-4 border-blue-100 mb-4" src="https://randomuser.me/api/portraits/women/10.jpg" alt="Customer">
+          <h4 class="text-lg font-bold text-gray-700">سارا احمدی</h4>
+          <p class="text-gray-500 text-sm mt-2">"محصولات این فروشگاه عالی هستند و بسته‌بندی بسیار شیکی داشتند. قطعا دوباره خرید خواهم کرد."</p>
+          <div class="mt-4 text-yellow-500 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+          </div>
+        </div>
+  
+        <!-- Repeat Testimonial Card -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
+          <img class="w-20 h-20 rounded-full border-4 border-blue-100 mb-4" src="https://randomuser.me/api/portraits/men/2.jpg" alt="Customer">
+          <h4 class="text-lg font-bold text-gray-700">علی کریمی</h4>
+          <p class="text-gray-500 text-sm mt-2">"قیمت مناسب، کیفیت بالا و پشتیبانی خوب باعث شد تا مشتری دائم این فروشگاه شوم."</p>
+          <div class="mt-4 text-yellow-500 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.62 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">خدمات ما</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-blue-100 p-8 rounded-lg shadow-lg transition duration-300 hover:shadow-xl">
+          <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10l5 5 5-5"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">خدمات مشاوره</h3>
+          <p class="text-gray-600">ما به شما کمک می‌کنیم تا بهترین تصمیمات را در خرید و استفاده از لوازم خانگی بگیرید.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="bg-blue-100 p-8 rounded-lg shadow-lg transition duration-300 hover:shadow-xl">
+          <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">حمل و نقل سریع</h3>
+          <p class="text-gray-600">کالاهای شما را با سرعت و ایمنی بالا به آدرس مورد نظر ارسال می‌کنیم.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="bg-blue-100 p-8 rounded-lg shadow-lg transition duration-300 hover:shadow-xl">
+          <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">گارانتی محصولات</h3>
+          <p class="text-gray-600">تمامی محصولات ما دارای گارانتی معتبر برای آرامش خاطر شما هستند.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin: 60px; border-radius: 10px;" class="bg-gray-100">
+    <div class="flex items-center justify-between space-x-8" dir="ltr">
+      <!-- Image Overlay -->
+      <div class="relative w-1/2">
+        <img src="src/man.jpg" alt="Engineer" class=" rounded-lg" style="margin-left: 70px; max-width: 500px; margin: 10px;">
+      </div>
+  
+      <!-- Text Section -->
+      <div class="relative w-1/2 text-right">
+        <p class="text-gray-800" style="margin-right: 30px;">
+          تیم مهندسان ما با بهره‌گیری از دانش روز و تجربه عملی در زمینه‌های مختلف، آماده است تا به شما در تحقق اهداف فنی و مهندسی‌تان کمک کند. ما ارائه‌دهنده طیف گسترده‌ای از خدمات با کیفیت بالا و راه‌حل‌های نوآورانه در حوزه‌های مختلف مهندسی هستیم.
+          <br><br>
+          از طراحی و مشاوره فنی گرفته تا اجرا و نظارت دقیق، خدمات ما برای صنایع مختلف شامل مهندسی عمران، برق، مکانیک، نرم‌افزار و بیشتر، با توجه به نیازهای خاص شما تنظیم می‌شود.
+          <br><br>
+          ما در تیم مهندسی خود، به همکاری نزدیک با مشتریان و استفاده از بهترین فناوری‌ها و روش‌های نوین برای ارائه راه‌حل‌های بهینه متعهدیم.
+          <br><br>
+          با اعتماد به تیم مهندسی ما، اطمینان داشته باشید که پروژه‌های شما با بالاترین کیفیت و در کوتاه‌ترین زمان ممکن به نتیجه می‌رسند.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+
+  
+  <!-- Footer -->
+
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo Section -->
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-3xl font-bold">تایگر تیم</h2>
+          <p class="text-sm mt-2">خدمات مهندسی و مشاوره با کیفیت بالا</p>
+        </div>
+        
+        <!-- Links Section -->
+        <div class="flex flex-col md:flex-row items-center mb-6 md:mb-0">
+          <a href="#" class="text-white hover:text-gray-300 mx-4 text-sm">خانه</a>
+          <a href="#" class="text-white hover:text-gray-300 mx-4 text-sm">درباره ما</a>
+          <a href="#" class="text-white hover:text-gray-300 mx-4 text-sm">خدمات</a>
+          <a href="#" class="text-white hover:text-gray-300 mx-4 text-sm">تماس با ما</a>
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="flex items-center">
+          <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+  
+      <div class="text-center mt-6">
+        <p class="text-sm">
+          © 2024 نام شرکت. تمام حقوق محفوظ است.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>
